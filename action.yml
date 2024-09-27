@@ -1,0 +1,5 @@
+name: am putting my first docker custom action to marketplace
+description: just a demo
+runs:
+  using: "docker"
+  image: "Dockerfile"
