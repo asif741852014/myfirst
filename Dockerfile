@@ -1,7 +1,7 @@
 FROM alpine:3.10
 WORKDIR /var/lib
-COPY . .
+COPY entrypoint.sh entrypoint.sh
 RUN ls -larth
 RUN echo "Starting entrypoint script"
-RUN chmod 777 ./entrypoint.sh
+RUN chmod +x ./entrypoint.sh
 ENTRYPOINT ["sh","./entrypoint.sh"]
