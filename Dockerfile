@@ -3,5 +3,5 @@ WORKDIR /var/lib
 COPY . .
 RUN ls -larth
 RUN echo "Starting entrypoint script"
-RUN chmod +x ./entrypoint1.sh
-ENTRYPOINT ["sh", "./entrypoint.sh"]
+RUN chmod 777 ./entrypoint.sh
+ENTRYPOINT ["sh","./entrypoint.sh"]
